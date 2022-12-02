@@ -1,0 +1,10 @@
+<div>
+    <h1>{{aim}}</h1>
+</div>
+   <div class="container text-center w-50 mt-5 p-5">
+    <h1 class="">Welcome to Madrid Bank Web Portal</h1>
+        <input type="text" name="acno" (change)="acnoChange($event)" class="form-control mt-3" [placeholder]="data" id="acid">
+        <input type="text" name="psw" (change)="pswChange($event)" class="form-control mt-3" placeholder="Password" id="pid">
+        <button  type="submit" (click)="login()" class="btn btn-success mt-3">login</button><br>
+        <button  type="submit" class="btn btn-info mt-3">Register</button>
+    </div>
