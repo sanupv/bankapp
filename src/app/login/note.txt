@@ -13,5 +13,6 @@ html-view
 
        1.2.1 event binding                 (eventname)="method name()"
        1.2.2 event binding using $event    (event name)="method name($event)"
+       1.2.3 event binding using template rendering variable #variable
 
                                     
