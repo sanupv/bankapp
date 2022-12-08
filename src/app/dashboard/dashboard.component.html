@@ -1,1 +1,25 @@
-<p>dashboard works!</p>
+<h1 class="text-white p-4"> Welcome {{user}} </h1>
+
+<div>
+    <a style="background: rgb(113, 125, 170); border-radius: 25px;" class="p-4 ms-3 border border-white text-white" routerLink="/transaction">View Transaction History</a>
+</div>
+
+<form (ngSubmit)="deposit()">
+    <div class="container text-center w-50 mt-5 p-5">
+        <h1 class="">Deposit</h1>
+        <input type="text" name="acno" [(ngModel)]="acno" class="form-control mt-3" placeholder="Account Number" id="acid">
+        <input type="password" name="psw" [(ngModel)]="psw"  class="form-control mt-3" placeholder="Password" id="pid">
+        <input type="text" name="amount" [(ngModel)]="amnt" class="form-control mt-3" placeholder="Amount" id="aid">
+        <button type="submit" class="btn btn-success mt-3">Deposit</button>
+    </div>
+</form>
+
+<form (ngSubmit)="withdraw()">
+    <div class="container text-center w-50 mt-5 p-5">
+        <h1 class="">Withdrawal</h1>
+        <input type="text" name="acno1" [(ngModel)]="acno1" class="form-control mt-3" placeholder="Account Number" id="acid1">
+        <input type="password" name="psw1" [(ngModel)]="psw1" class="form-control mt-3" placeholder="Password" id="pid1">
+        <input type="text" name="amount1" [(ngModel)]="amnt1"  class="form-control mt-3" placeholder="Amount" id="aid1">
+        <button type="submit" class="btn btn-success mt-3">Withdraw</button>
+    </div>
+</form>

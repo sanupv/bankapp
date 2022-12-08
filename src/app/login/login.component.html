@@ -1,10 +1,13 @@
 <div>
     <h1>{{aim}}</h1>
 </div>
-   <div class="container text-center w-50 mt-5 p-5">
-    <h1 class="">Welcome to Madrid Bank Web Portal</h1>
+   
+<form (ngSubmit)="login()">
+    <div class="container text-center w-50 mt-5 p-5">
+    <h1 class="">Welcome to Bank Web Portal</h1>
         <input type="text" name="acno" [(ngModel)]="acno"  class="form-control mt-3" [placeholder]="data" id="acid">
-        <input type="text" name="psw" [(ngModel)]="psw" class="form-control mt-3" placeholder="Password" id="pid">
-        <button  type="submit" (click)="login()" class="btn btn-success mt-3">login</button><br><br>
+        <input type="password" name="psw" [(ngModel)]="psw" class="form-control mt-3" placeholder="Password" id="pid">
+        <button  type="submit" class="btn btn-success mt-3">login</button><br><br>
         <p class="text-white">New User?  <a routerLink="register">Register</a> </p>
     </div>
+</form>
