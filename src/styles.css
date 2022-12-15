@@ -3,3 +3,6 @@ body{
     background-image: url("./assets/pexels-johannes-plenio-1103970.jpg");
     background-size: cover;
 }
+.style{
+    opacity:0 ;
+}

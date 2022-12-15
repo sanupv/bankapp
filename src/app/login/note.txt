@@ -45,7 +45,7 @@ Angular Services
 ng g s servicename
 
 
-Angular directives
+Angular directives - To manage DOM in Angular
 ------------------
 
 1-Structural directives  - To handle structured datas in view of a component
@@ -53,6 +53,12 @@ Angular directives
      -ngFor    - can directly apply in html to access elements from array
 
      -ngIf     -To Check conditions in html
+
+2.Component directive
+
+3.Attribute directive
+
+   -ngClass   -adds and removes CSS classes on an HTML element
 
 
      Validation In Angular
@@ -88,3 +94,28 @@ Angular directives
                  if(this.registerForm.get('uname')?.error){          //*ngIf
                   
                  }
+
+                 Local Storage in Angular
+                 ------------------------
+
+
+                 -store   localStorage.setItem()
+                 -access  localStorage.getItem()
+                 -delete  localStorage.removeItem()
+
+
+                 Parent Child Components communication in Angular
+                 ------------------------------------------------
+
+
+
+
+
+
+
+                 Date in Angular
+                 ---------------
+                 Date    - class
+               -create an object of class Date to access Date and Time 
+
+
